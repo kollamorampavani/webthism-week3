@@ -10,9 +10,11 @@ app.use(express.json());
 
 // Import Routes
 const authRoutes = require('./routes/authRoutes');
+const postRoutes = require('./routes/postRoutes');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/posts', postRoutes);
 
 // Test Route
 app.get('/api/test', (req, res) => {

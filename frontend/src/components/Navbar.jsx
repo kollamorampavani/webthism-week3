@@ -18,6 +18,7 @@ const Navbar = () => {
                 <Link to="/">BlogCMS</Link>
             </div>
             <div className="navbar-links">
+                <Link to="/posts" className="btn-login">Posts</Link>
                 {user ? (
                     <>
                         <span className="navbar-user">Welcome, {user.username}</span>

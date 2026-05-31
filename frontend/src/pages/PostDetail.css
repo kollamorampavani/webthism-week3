@@ -1,0 +1,124 @@
+.post-detail-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+    display: flex;
+    gap: 1rem;
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+.detail-back {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.detail-content {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.9;
+    color: #e2e8f0;
+}
+
+.comments-section,
+.comment-form-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.comments-section h2,
+.comment-form-section h2 {
+    margin-bottom: 1rem;
+}
+
+.comment-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: #cbd5e1;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.comment-card p {
+    line-height: 1.8;
+    color: #e2e8f0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 140px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.22);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.comment-form button {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: #111827;
+    border: none;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.login-prompt {
+    color: #e2e8f0;
+}
+
+.detail-login-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #00d2ff;
+    text-decoration: none;
+}
+
+.form-error,
+.loading-state,
+.error-state,
+.empty-state {
+    color: #f8d7da;
+    background: rgba(248, 212, 218, 0.15);
+    border: 1px solid rgba(248, 212, 218, 0.35);
+    padding: 1rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+}

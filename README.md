@@ -74,6 +74,51 @@ The backend will auto-create the `users`, `posts`, and `comments` tables when it
 
 ## Deployment Notes
 
-- Deploy the backend to a server or platform that supports Node.js and PostgreSQL.
-- Deploy the frontend to Vercel, Netlify, or any static hosting provider.
-- Update the base API URL in `frontend/src/api.js` when deploying to production.
+### Frontend Deployment
+
+The frontend can be deployed automatically using GitHub Pages.
+After the workflow runs, the site will be available at:
+
+`https://kollamorampavani.github.io/webthism-week3/`
+
+Make sure GitHub Pages is enabled for the `gh-pages` branch in repository settings.
+
+### Backend Deployment
+
+The backend requires a Node.js host with PostgreSQL.
+You can deploy it on Render, Railway, Heroku, or any cloud provider that supports Node.js.
+
+Required environment variables:
+
+```env
+PORT=5000
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=blog_cms
+JWT_SECRET=your_jwt_secret_here
+```
+
+If you use Render or Heroku, set the start command to:
+
+```bash
+npm run start
+```
+
+### Container Deployment
+
+The repository includes Dockerfiles in both `backend/` and `frontend/` to support container-based hosting.
+
+- `backend/Dockerfile`
+- `frontend/Dockerfile`
+
+### Update API URL for Production
+
+After deploying the backend, update `frontend/src/api.js` to point to the live backend URL:
+
+```js
+const API = axios.create({
+    baseURL: 'https://your-backend-url.com/api',
+});
+```
